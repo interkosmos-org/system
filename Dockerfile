@@ -9,4 +9,3 @@ RUN chmod a+x /tmp/interkosmos/*/*.sh
 RUN nix-channel --add https://nixos.org/channels/nixos-${NIXOS_VERSION} nixos
 
 ENTRYPOINT [ "/tmp/interkosmos/entrypoint.sh" ]
-

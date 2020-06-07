@@ -5,4 +5,3 @@
     <nixpkgs/nixos/modules/installer/cd-dvd/channel.nix>
   ];
 }
-

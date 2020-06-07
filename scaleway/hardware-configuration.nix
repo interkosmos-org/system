@@ -17,4 +17,3 @@
     };
     nix.maxJobs = lib.mkDefault 1;
 }
-

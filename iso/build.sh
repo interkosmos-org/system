@@ -16,4 +16,3 @@ mission "extract interkosmos image"
 
 duration=$SECONDS
 echo "iso image built in $(($duration / 60))m $(($duration % 60))s!"
-

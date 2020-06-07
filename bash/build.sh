@@ -7,4 +7,3 @@ mission "install bash utilities"
 
 mission "start bash"
   phase /bin/bash
-

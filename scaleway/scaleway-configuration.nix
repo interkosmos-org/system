@@ -8,4 +8,3 @@
     boot.growPartition = true;
     fileSystems."/".autoResize = true;
 }
-

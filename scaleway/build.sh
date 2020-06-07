@@ -106,4 +106,3 @@ mission "delete server"
 
 duration=$SECONDS
 echo "image built as '$image_name' on scaleway in $(($duration / 60))m $(($duration % 60))s!"
-
