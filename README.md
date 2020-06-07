@@ -1,48 +1,35 @@
-# Mission
+# Interkosmos System
 
-A minimal shell scripting UX library. Makes your shell scripts look a little bit neat.
+NixOS with GitOps orientation with Docker based build system.
 
 ## Installation
 
-1. Clone repository or add repository as a submodule
-2. Add `source mission/mission.sh` to your shell script
+1. Install Docker
+2. Clone repository
 
 ## Usage
 
-* `mission` describes a task
-* `phase` declares what should be done
-
-### Local example
+### Build ISO image
 
 ```bash
-#!/usr/bin/env bash
+./build.sh iso
+``` 
 
-source mission/mission.sh
+### Build Scaleway image
 
-mission "update apt"
-  phase apt update
-
-mission "upgrade packages"
-  phase apt upgrade -y
+```bash
+./build.sh scaleway
 ```
 
-### Remote example
+### Access build container
 
 ```bash
-#!/usr/bin/env bash
-
-source mission/mission.sh
-
-mission "define ssh transport"
-  transport="ssh -l root 192.168.1.100"
-
-mission "upgrade packages"
-  phase $transport dnf update -y
+./build.sh bash
 ```
 
 ## Contributing
 
-1. Fork it (<https://github.com/interkosmos-org/mission/fork>)
+1. Fork it (<https://github.com/interkosmos-org/system/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
