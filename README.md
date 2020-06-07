@@ -18,6 +18,13 @@ NixOS with GitOps orientation with Docker based build system.
 ### Build Scaleway image
 
 ```bash
+# add your scaleway credentials and configuration to `scaleway/config.yaml`
+echo "access_key: SCWMYACCESSKEY123456
+secret_key: f5254b24-a8f4-11ea-865f-0242ac110002
+default_organization_id: 0e5ac42a-a8f5-11ea-90ff-0242ac110002
+default_region: fr-par
+default_zone: fr-par-1" > scaleway/config.yaml
+
 ./build.sh scaleway
 ```
 
