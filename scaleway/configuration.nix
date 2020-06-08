@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
-{
-    imports = [
-        ./hardware-configuration.nix
-        ./scaleway-configuration.nix
-    ];
-    system.stateVersion = "20.03";
+{ config, pkgs, ... }: {
+  imports = [
+    ./hardware-configuration.nix
+    ./scaleway-configuration.nix
+    ./interkosmos
+  ];
+  system.stateVersion = "20.03";
 }
